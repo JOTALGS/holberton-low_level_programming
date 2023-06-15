@@ -1,9 +1,6 @@
 #include <stdio.h>
 #include <string.h>
-/**
-*Main- 
-*no hace nada. 
-*/
+/* Main- no hace nada. */
 int main(void)
 {
 	puts("\"Programming is like building a multilingual puzzle");
