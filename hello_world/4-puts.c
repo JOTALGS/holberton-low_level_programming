@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 /**
- *  Main funct: no hace nada. 
+*  Main funct: no hace nada. 
 */
 int main(void)
 {
