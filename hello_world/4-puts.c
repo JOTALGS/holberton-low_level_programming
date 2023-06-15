@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <string.h>
 /**
-* Main- 
-* no hace nada. 
+*Main- 
+*no hace nada. 
 */
 int main(void)
 {
