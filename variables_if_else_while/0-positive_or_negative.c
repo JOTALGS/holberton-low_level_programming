@@ -1,10 +1,8 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-/* more headers goes there */
-
 /**
- * Main - mainfunc
+ * main - mainfunc
  * Return:0
  */
 int main(void)
