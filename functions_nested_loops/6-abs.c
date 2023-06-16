@@ -3,7 +3,7 @@
 #include <stdlib.h>
 /**
  * _abs - abs val
- * @int: int
+ * @n: int val
  * Return:abs of an int
  */
 int _abs(int n)
