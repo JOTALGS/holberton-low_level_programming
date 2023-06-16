@@ -1,13 +1,14 @@
 #include <stdio.h>
-/** main - main function stuff
+/** 
+ * main - main function stuff
  * Return:0
  */
-int main (void)
+int main(void)
 {
 	char abc;
 	char newline = '\n';
 
-	for (abc = 'a';abc <= 'z';abc++)
+	for (abc = 'a'; abc <= 'z'; abc++)
 	{
 		putchar(abc);
 	}
