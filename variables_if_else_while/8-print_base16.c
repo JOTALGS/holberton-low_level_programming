@@ -16,9 +16,9 @@ int main(void)
 		}
 		else
 		{
-			putchar('a' + (count-10));
+			putchar('a' + (count - 10));
 		}
 	}
 	putchar(newline);
 	return (0);
-}	
+}
