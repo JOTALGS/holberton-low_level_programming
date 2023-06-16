@@ -12,7 +12,8 @@ int main(void)
 	{
 		if ((abc == 'e') | (abc == 'q'))
 		{
-		} else
+		}
+		else
 		{
 			putchar(abc);
 		}
