@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_alphabet - check the nest
+ * print_alphabet_x10 - check the nest
  */
 void print_alphabet_x10(void)
 {
