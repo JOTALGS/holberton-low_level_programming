@@ -1,16 +1,15 @@
 #include "main.h"
 /**
- * nest - nested under main
- * Return: always 0
+ * main - check the nest
  */
 void print_alphabet(void)
 {
 	char alph;
 
-	for (alph = 'a'; alph <= 'z'; aplh++)
+	for (alph = 'a'; alph <= 'z'; alph++)
 	{
-		_putchar(aplh);
+		_putchar(alph);
 	}
-	return (0);
+	_putchar('\n');
 }
 
