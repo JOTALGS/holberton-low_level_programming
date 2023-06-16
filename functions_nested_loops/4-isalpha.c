@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <ctype.h>
 /**
- * _islower - dale qnas
+ * _isalpha - dale qnas
  * @c: input value
  * Return: 1 if lower, 0 if upper.
  */
