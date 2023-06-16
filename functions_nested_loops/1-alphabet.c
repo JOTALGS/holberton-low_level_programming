@@ -5,9 +5,12 @@
  */
 void print_alphabet(void)
 {
-	char alph = "abcdefghijklmnopqrstuvwxyz";
+	char alph;
 
-	_putchar(aplh);
+	for (alph = 'a'; alph <= 'z'; aplh++)
+	{
+		_putchar(aplh);
+	}
 	return (0);
 }
 
