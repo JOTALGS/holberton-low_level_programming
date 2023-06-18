@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * times table - asf damd
+ * times_table - asf damd
  */
 void times_table(void)
 {
@@ -9,15 +9,16 @@ void times_table(void)
 	int j;
 	int n = 9;
 
-
-    	for (i = 0; i <= n; i++) 
+	for (i = 0; i <= n; i++) 
 	{
-        	for (j = 0; j <= n; j++) 
+		for (j = 0; j <= n; j++) 
 		{
-            		printf("%3d", i * j);
-			printf(",");
-        	}
-        	printf("\n");
+			printf("%3d", i * j);
+			if (j != n)
+			{
+				printf(",");
+			}	
+		}
+		printf("\n");
 	}
 }
-
