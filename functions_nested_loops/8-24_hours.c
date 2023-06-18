@@ -27,7 +27,7 @@ void jack_bauer(void)
 						_putchar(mn_1);
 						_putchar('\n');
 					}
-					else if (hr_1 <'4')
+					else if (hr_1 < '4')
 					{
 						_putchar(hr);
 						_putchar(hr_1);
