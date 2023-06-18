@@ -18,7 +18,16 @@ void jack_bauer(void)
 			{
 				for (mn_1 = '0'; mn_1 <= '9'; mn_1++)
 				{
-					if (hr_1 < '4' && hr <= '2')
+					if (hr < '2')
+					{
+						_putchar(hr);
+						_putchar(hr_1);
+						_putchar(':');
+						_putchar(mn);
+						_putchar(mn_1);
+						_putchar('\n');
+					}
+					else if (hr_1 <'4')
 					{
 						_putchar(hr);
 						_putchar(hr_1);
