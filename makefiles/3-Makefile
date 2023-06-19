@@ -21,6 +21,6 @@ fclean:
 
 re:
 	$(RM) -f main.o school.o
-	gcc -c -o main.o main.c
-	gcc -c -o school.o school.c
-	gcc main.o school.o -o school
+	$(CC) -c -o main.o main.c
+	$(CC) -c -o school.o school.c
+	$(CC) main.o school.o -o school
