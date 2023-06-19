@@ -5,7 +5,8 @@ NAME = school
 
 all: school
 
-school: $(SRC)
+school: main.c school.c
+	$(CC) $(SRC) -o school
 	$(CC) -c -o main.o main.c
 	$(CC) -c -o school.o school.c
 	$(CC) $(OBJ) -o $(NAME)
