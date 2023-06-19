@@ -1,6 +1,7 @@
-comp := $(CC)
-source := $(SRC)
+CC = gcc
+SRC = "*.c"
+
 all: school
 
-school: $(source)
-	$(comp) main.c school.c -o school
+school: main.c school.c
+	gcc main.c school.c -o school
