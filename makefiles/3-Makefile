@@ -13,7 +13,7 @@ clean:
 	$(RM) *~ $(NAME)
 
 oclean:
-	$(RM) main.o school.o
+	$(RM) $(OBJ)
 
 fclean:
 	$(RM) *~ $(NAME)
