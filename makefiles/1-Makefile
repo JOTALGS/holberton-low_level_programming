@@ -1,5 +1,5 @@
-CC := gcc
-SRC := $(shell find . -type f -name '.c')
+CC = gcc
+SRC = $(shell find . -type f -name '.c')
 
 all: school
 
