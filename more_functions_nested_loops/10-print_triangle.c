@@ -11,20 +11,27 @@ void print_triangle(int size)
 	int a;
 	int e;
 
-	a = size;
-	e = 1;
-	for (c = 1; c <= size; c++)
+	if (size > 0)
 	{
-		a--;
-		for (b = 1; b <= a; b++)
+		a = size;
+		e = 1;
+		for (c = 1; c <= size; c++)
 		{
-			_putchar(' ');
+			a--;
+			for (b = 1; b <= a; b++)
+			{
+				_putchar(' ');
+			}
+			for (b = 1; b <= e; b++)
+			{
+				_putchar('#');
+			}
+			_putchar('\n');
+			e++;
 		}
-		for (b = 1; b <= e; b++)
-		{
-			_putchar('#');
-		}
+	}
+	else
+	{
 		_putchar('\n');
-		e++;
 	}
 }
