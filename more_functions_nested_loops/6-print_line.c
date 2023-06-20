@@ -1,7 +1,8 @@
 #include "main.h"
 
 /**
- * print_lines - dsaa
+ * print_line - dsaa
+ * @n - vavs
  */
 void print_line(int n)
 {
