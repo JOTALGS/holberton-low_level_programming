@@ -26,7 +26,10 @@ int main(void)
 		{
 			printf("%d", ct);
 		}
-		printf(" ");
+		if (ct != 100)
+		{
+			printf(" ");
+		}
 	}
 	printf("\n");
 	return (0);
