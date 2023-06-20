@@ -2,7 +2,7 @@
 
 /**
  * print_line - dsaa
- * @n - vavs
+ * @n: vavs
  */
 void print_line(int n)
 {
