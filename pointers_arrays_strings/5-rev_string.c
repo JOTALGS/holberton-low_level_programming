@@ -17,6 +17,6 @@ rev_string(char *s)
 	{
 		ch = str[i];
 		s[c] = ch;
-		c++;	
+		c++;
 	}
 }
