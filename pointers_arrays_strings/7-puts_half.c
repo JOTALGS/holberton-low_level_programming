@@ -8,9 +8,17 @@ puts_half(char *s)
 	int length = strlen(s);
 	int i;
 
-	for (i = (length / 2) - 1; i < length; i++)
+	if (length % 2 == 0)
 	{
-		putchar(s[i]);
+		for (i = (length / 2); i < length; i++)
+		{
+			putchar(s[i]);
+		}
+		putchar('\n');
 	}
-	putchar('\n');
+	else
+		for (i = ((length - 1) / 2); i < length; i++)
+		{
+			putchar(s[i]);
+		}
 }
