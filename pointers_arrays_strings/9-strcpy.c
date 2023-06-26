@@ -7,7 +7,7 @@ char
 	int l = strlen(src);
 	int i;
 
-	for (i = 0; i < l; i++)
+	for (i = 0; i <= l; i++)
 	{
 		dest[i] = src[i];
 	}
