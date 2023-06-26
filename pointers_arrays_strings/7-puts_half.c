@@ -17,7 +17,7 @@ puts_half(char *s)
 		putchar('\n');
 	}
 	else
-		for (i = ((length - 2 / 2)); i <= length; i++)
+		for (i = ((length - 1 / 2)); i <= length; i++)
 		{
 			putchar(s[i]);
 		}
