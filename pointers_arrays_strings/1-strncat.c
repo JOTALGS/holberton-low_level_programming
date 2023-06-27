@@ -4,12 +4,15 @@
 char
 *_strncat(char *dest, char *src, int n)
 {
-	int lend = strlen(dest);
+	int lend = strlen(dest) - 1;
 	int i;
 
-	for (i = 0; i < n; i++)
+	if (src[0] != '\0')
 	{
-		dest[lend + i] = src[i];
+		for (i = 0; i < n; i++)
+		{
+			dest[lend + i] = src[i];
+		}
 	}
 	return (dest);
 }
