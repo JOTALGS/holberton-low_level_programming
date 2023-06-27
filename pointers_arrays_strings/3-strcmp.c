@@ -16,8 +16,7 @@ _strcmp(char *s1, char *s2)
 			return (a - b);
 		}
 		i++;
-	} while (a == b);
-	
+	} while (a == b);	
 	{
 	}
 	return (a - b);
