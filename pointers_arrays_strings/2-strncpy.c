@@ -7,13 +7,9 @@ char
 	int i;
 	char nl = '\0';
 
-	if (src[0] != '\0')
+	for (i = 0; i < n && src[i] != nl; i++)
 	{
-		for (i = 0; i < n; i++)
-		{
-			dest[i] = src[i];
-		}
+		dest[i] = src[i];
 	}
-	dest[i + 1] = nl;
 	return (dest);
 }
