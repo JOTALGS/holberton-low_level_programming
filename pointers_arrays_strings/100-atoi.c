@@ -8,27 +8,29 @@ int
 _atoi(char *s)
 {
 	int len = strlen(s);
+	int len_1;
 	int i;
-	int c = 0;
-	int n;
-	char l = 'l';
+	int c;
+	char str[500] = "s";
+	int ind = 0;
 
 	for (i = 0; i < len; i++)
 	{
-		if (s[i] == ' ')
-		{
-			s[i] = l;
-		}
 		if (isdigit(s[i]))
 		{
-			c = 1;
-			continue;
+			c = i - 1;
+			if (s[c] == '+' || s[c] == '-')
+			{
+				str[ind] = s[c];
+			}
+			str[ind] = s[i];
 		}
 	}
-	if (c == 1)
+	len_1 = strlen(str);
+	puts(str);
+	if (len_1 != 0)
 	{
-		n = atoi(s);
-		return (n);
+		return (atoi(str));
 	}
 	else
 	{
