@@ -5,6 +5,7 @@ char
 *_strncpy(char *dest, char *src, int n)
 {
 	int i;
+	char nl = '\0';
 
 	if (src[0] != '\0')
 	{
@@ -13,5 +14,6 @@ char
 			dest[i] = src[i];
 		}
 	}
+	dest[i + 1] = nl;
 	return (dest);
 }
