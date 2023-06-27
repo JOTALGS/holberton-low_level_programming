@@ -1,10 +1,22 @@
 #include "main.h"
 #include <string.h>
-int
+
+	int
 _strcmp(char *s1, char *s2)
 {
-	int df;
+	char a;
+	char b;
+	int i = 0;
 
-	df = strcmp(s1, s2);
-	return (df);
+	do
+	{
+		a = s1[i];
+		b = s2[i];
+		if (a == '\0')
+			return (a - b);
+		i++;
+	}
+	while (a == b);
+
+	return (a - b);
 }
