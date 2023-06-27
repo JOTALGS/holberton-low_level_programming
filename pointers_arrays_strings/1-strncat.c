@@ -4,7 +4,7 @@
 char
 *_strncat(char *dest, char *src, int n)
 {
-	int lend = strlen(dest) - 1;
+	int lend = strlen(dest);
 	int i;
 
 	if (src[0] != '\0')
