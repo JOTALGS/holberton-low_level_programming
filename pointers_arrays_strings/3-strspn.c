@@ -6,6 +6,7 @@ _strspn(char *s, char *accept)
 	int i;
 	int y;
 	unsigned int ct;
+	int conf = 0;
 
 	ct = 0;
 	for (i = 0; accept[i] != '\0'; i++)
@@ -14,10 +15,14 @@ _strspn(char *s, char *accept)
 		{
 			if (s[y] == accept[i])
 			{
-				ct++;
+				conf = 1;
 				break;
 			}
 		}
+		if (conf)
+		{
+			ct++;
+		}
 	}
-	return (ct + 1);
+	return (ct);
 }
