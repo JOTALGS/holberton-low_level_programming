@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * main - check the code
+ * *_strpbrk - check the code
  * @s: s
  * @accept: sd
  * Return: bla
