@@ -11,9 +11,9 @@ char
 	{
 		if (str[i] == ' ' || str[i] == '\n')
 		{
-			if (isalpha(str[i + 1]) == 0)
+			if (isalpha(str[i + 1]))
 			{
-				str[i + 1] = str[i] - 32;
+				str[i + 1] = str[i+ 1] - 32;
 			}
 		}
 	}
