@@ -15,10 +15,7 @@ char
 			{
 				str[i] = str[i] -32;
 			}
-			else if (isalpha(str[i - 1]))
-			{
-			}
-			else
+			else if (str[i - 1] == ' ' || str[i - 1] == '\n' || str[i - 1] == '\t' || str[i - 1] == '.')
 			{
 				str[i] = str[i] - 32;
 			}
