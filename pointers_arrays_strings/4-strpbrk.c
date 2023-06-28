@@ -3,7 +3,8 @@
 
 /**
  * main - check the code
- * 
+ * @s: s
+ * @accept: sd
  * Return: bla
  */
 char *_strpbrk(char *s, char *accept)
@@ -11,9 +12,9 @@ char *_strpbrk(char *s, char *accept)
 	int i;
 	int y;
 
-	for (i = 0; accept[i] != '\0'; i++)
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		for (y = 0; s[y] != '\0'; y++)
+		for (y = 0; accept[y] != '\0'; y++)
 		{
 			if (s[y] == accept[i])
 			{
