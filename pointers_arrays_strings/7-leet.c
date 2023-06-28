@@ -1,8 +1,8 @@
 #include "main.h"
 #include <stdio.h>
-	
+
 char
-*leet (char *str)
+*leet(char *str)
 {
 	int i;
 	int j;
