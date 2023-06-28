@@ -20,9 +20,9 @@ char
 				str[i] = str[i] - 32;
 			}
 			else if (str[i - 1] == '\t' || str[i - 1] == '.')
-                        {
-                                str[i] = str[i] - 32;
-                        }
+			{
+				str[i] = str[i] - 32;
+			}
 		}
 	}
 	return (str);
