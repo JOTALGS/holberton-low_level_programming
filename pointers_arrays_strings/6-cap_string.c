@@ -9,11 +9,18 @@ char
 
 	for (i = 0; str[i] != '\0'; i++)
 	{
-		if (str[i] == ' ' || str[i] == '\n')
+		if (str[i] >= 'a' && str[i] <= 'z')
 		{
-			if (isalpha(str[i + 1]))
+			if (i == 0)
 			{
-				str[i + 1] = str[i+ 1] - 32;
+				str[i] = str[i] -32;
+			}
+			else if (isalpha(str[i - 1]))
+			{
+			}
+			else
+			{
+				str[i] = str[i] - 32;
 			}
 		}
 	}
