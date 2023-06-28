@@ -23,6 +23,10 @@ _strspn(char *s, char *accept)
 		{
 			ct++;
 		}
+		else
+		{
+			break;
+		}
 	}
 	return (ct);
 }
