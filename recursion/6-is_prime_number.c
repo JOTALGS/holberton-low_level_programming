@@ -3,10 +3,12 @@
 int
 isprime(int n, int i)
 {
-	if (n % i == 0)
-		return (1);
+	if (n == 1 || n == -1)
+		return (0);
+	else if (n % i == 0)
+		return (0);
 	else if (i > n / 2)
-		return (-0);
+		return (1);
 
 	i++;
 	return (isprime(n, i));
