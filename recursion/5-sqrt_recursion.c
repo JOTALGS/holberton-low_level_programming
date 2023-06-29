@@ -7,11 +7,9 @@ find_square(int n, int i)
 		return (i);
 	else if (i >= n / 2)
 		return (-1);
-	else
-	{
-		i++;
-		return (find_square(n, i));
-	}
+
+	i++;
+	return (find_square(n, i));
 }
 
 int
