@@ -7,7 +7,7 @@ main(int argc, char **argv)
 
 	if (i != 0)
 	{
-		printf("%d\n", argc);
+		printf("%d\n", (argc - 1));
 		return (0);
 	}
 	return (0);
