@@ -1,19 +1,20 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 int
 main(int argc, char **argv)
 {
 	int ml;
-	int a;
-	int b;
+	long int a;
+	long int b;
 
 	if (argc != 3)
 	{
 		printf("Error\n");
 		return (1);
 	}
-	a = *argv[1] - '0';
-	b = *argv[2] - '0';
+	a = atoi(argv[1]);
+	b = atoi(argv[2]);
 	ml = a * b;
 	printf("%d\n", ml);
 	return (0);
