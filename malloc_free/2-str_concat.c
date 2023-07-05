@@ -10,18 +10,37 @@
 char *str_concat(char *s1, char *s2)
 {
 	char *ar;
-	int i;
-	int len1 = strlen(s1);
-	int len2 = strlen(s2);
+	int i = 0;
+	int len1;
+	int len2;
 
+	if (s1 == NULL)
+		len1 = 0;
+	else
+		len1 = strlen(s1);
+
+	if (s2 == NULL)
+		len2 = 0;
+	else
+		len2 = strlen(s2);
+	
 	ar = malloc(len1 + len2 + 1);
-	for (i = 0; i <= len1; i++)
+	if (!ar)
+		return (NULL);
+	
+	if (s1 != NULL)
 	{
-		ar[i] = s1[i];
+		for (i = 0; i <= len1; i++)
+		{
+			ar[i] = s1[i];
+		}
 	}
-	for (i = 0; i <= len2; i++)
+	if (s2 != NULL)
 	{
-		ar[len1 + i] = s2[i];
+		for (i = 0; i <= len2; i++)
+		{
+			ar[len1 + i] = s2[i];
+		}
 	}
 	ar[len1 + i + 1] = '\0';
 	return (ar);
