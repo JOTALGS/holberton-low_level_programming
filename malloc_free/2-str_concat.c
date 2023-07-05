@@ -18,16 +18,15 @@ char *str_concat(char *s1, char *s2)
 		len1 = 0;
 	else
 		len1 = strlen(s1);
-
 	if (s2 == NULL)
 		len2 = 0;
 	else
 		len2 = strlen(s2);
-	
+
 	ar = malloc(len1 + len2 + 1);
 	if (!ar)
 		return (NULL);
-	
+
 	if (s1 != NULL)
 	{
 		for (i = 0; i <= len1; i++)
