@@ -1,6 +1,12 @@
 #include "main.h"
 #include <stdlib.h>
 
+/**
+ * *create_array - adsfa
+ * @size: asdsdfa
+ * @c: asdfasf
+ * Return: arr.
+ */
 char *create_array(unsigned int size, char c)
 {
 	char *arr;
