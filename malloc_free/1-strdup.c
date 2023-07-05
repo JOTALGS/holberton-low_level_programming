@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdlib.h>
+#include <string.h>
 
 /**
  * *_strdup - jsjdj
@@ -13,7 +14,7 @@ char *_strdup(char *str)
 
 	if (str == NULL)
 		return (NULL);
-	new_str = malloc(sizeof(str));
+	new_str = malloc(strlen(str) + 1);
 	if (!new_str)
 		return (NULL);
 	for (i = 0; str[i] != '\0'; i++)
