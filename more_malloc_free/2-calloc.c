@@ -3,11 +3,11 @@
 #include <string.h>
 
 /**
- * *calloc - prints buffer in hexa
+ * *_calloc - prints buffer in hexa
  * @nmemb: the address of memory to print
  * @size: the size of the memory to print
  *
- * Return: Nothing.
+ * Return: srr.
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
@@ -18,6 +18,6 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	arr = malloc(nmemb * size);
 	if (!arr)
 		return (NULL);
-	bzero (arr, nmemb * size);
+	bzero(arr, nmemb * size);
 	return (arr);
 }
