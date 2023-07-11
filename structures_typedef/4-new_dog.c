@@ -7,7 +7,7 @@ new_dog(char *name, float age, char *owner)
 {
 	char *n_cpy;
 	char *o_cpy;
-	
+
 	dog_t *new_d;
 
 	n_cpy = malloc(strlen(name) + 1);
