@@ -1,9 +1,8 @@
 #ifndef dog_H
 #define dog_H
-/*
- * dog - sbansdnas
- */
-struct dog
+
+struct
+dog
 {
 	char *name;
 	char *owner;
