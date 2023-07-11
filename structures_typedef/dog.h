@@ -1,8 +1,14 @@
 #ifndef dog_H
 #define dog_H
-
-struct
-dog
+/**
+ * dog - nbaskd
+ * @name: sadsas
+ * @owner: asdfasd
+ * @age: sadas
+ *
+ * Description: asdasd
+ */
+struct dog
 {
 	char *name;
 	char *owner;
