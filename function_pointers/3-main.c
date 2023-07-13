@@ -1,4 +1,4 @@
-#include "calc.h"
+#include "3-calc.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -12,12 +12,12 @@ int main(int argc, char *argv[])
 
 	if (argc != 4)
 	{
-		printf("Error");
+		printf("Error\n");
 		exit(98);
 	}
-	if (*argv[2] != '+' && *argv[2] != '-' && *argv[2] != '*' && *argv[2] != '/' && *argv[2] != '%')
+	if (!(*argv[2] == '+' && *argv[2] == '-' && *argv[2] == '*' && *argv[2] == '/' && *argv[2] == '%'))
 	{
-                printf("Error: \n");
+                printf("Error\n");
                 exit(99);
         }
 	if ((*argv[2] == '/' && *argv[3] == '0') || (*argv[2] == '%' &&  *argv[3] == '0'))
