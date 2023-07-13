@@ -3,7 +3,8 @@
 #include <stdio.h>
 #include <string.h>
 
-int (*get_op_func(char *s))(int, int)
+int
+(*get_op_func(char *s))(int, int)
 {
 	op_t ops[] = {
 		{"+", op_add},
