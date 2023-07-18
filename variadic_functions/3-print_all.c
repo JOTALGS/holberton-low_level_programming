@@ -27,7 +27,7 @@ print_all(const char * const format, ...)
 					printf("%s, ", va_arg(args, char *));
 			}
 		}
-		else
+		if (!format[i + 1])
 		{
 			switch (format[i])
 			{
