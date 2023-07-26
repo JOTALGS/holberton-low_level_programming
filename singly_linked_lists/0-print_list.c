@@ -10,6 +10,8 @@ print_list(const list_t *h)
 	char *s;
 	list_t *nex;
 
+	if (!h)
+		return (0);
 	nex = h->next;
 	while (nex)
 	{
