@@ -16,4 +16,4 @@ free_list(list_t *head)
 			head = temp;
 		}
 	}
-}			
+}	
