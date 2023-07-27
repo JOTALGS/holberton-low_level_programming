@@ -8,6 +8,8 @@ print_dlistint(const dlistint_t *h)
 	const dlistint_t *node;
 	size_t ct = 0;
 
+	if (!h)
+		return (0);
 	node = h;
 	while (node->next)
 	{
