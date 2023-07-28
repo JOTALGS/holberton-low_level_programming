@@ -18,7 +18,7 @@ dlistint_t
 		{
 			ptr = ptr->next;
 		}
-        	ptr->next = temp;
+		ptr->next = temp;
 		temp->prev = ptr;
 	}
 	else
