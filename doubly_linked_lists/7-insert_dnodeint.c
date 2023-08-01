@@ -6,20 +6,25 @@ dlistint_t
 {
 	unsigned int i = 0;
 	dlistint_t *temp;
+	dlistint_t *nxnode;
 	dlistint_t *head = *h;
 
 	temp = malloc(sizeof(dlistint_t));
+	if (!temp)
+		return (NULL);
 	if (head)
 	{
 		while (head->next)
 		{
-			if (idx == i)
+			if (idx == i + 1)
 			{
+				nxnode = head->next;
 				temp->n = n;
 				temp->prev = head;
 				temp->next = head->next;
 				head->next = temp;
 				head = temp;
+				nxnode->prev = temp;
 				return (*h);
 			}
 			head = head->next;
