@@ -25,7 +25,7 @@ dlistint_t
 				head->prev = temp;
 				head = temp;
 				prnode->next = head;
-				return (*h);
+				return (head);
 			}
 			head = head->next;
 			i++;
