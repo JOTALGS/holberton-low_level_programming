@@ -10,11 +10,12 @@ dlistint_t
 		while (head->next)
 		{
 			if (index == i)
-				return(head);
-			else
-				head = head->next;
+				return (head);
+			head = head->next;
 			i++;
 		}
+		if (index > i)
+			return (NULL);
 		return (head);
 	}
 	return (NULL);
