@@ -42,8 +42,8 @@ dlistint_t
 	}
 	else
 	{
-		add_dnodeint(h, n);
-		return (head);
+		temp = add_dnodeint(h, n);
+		return (temp);
 	}
 	return (NULL);
 }
