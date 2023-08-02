@@ -42,10 +42,7 @@ dlistint_t
 	}
 	else
 	{
-		temp->n = n;
-		temp->prev = NULL;
-		temp->next = NULL;
-		head = temp;
+		add_dnodeint(h, n);
 		return (head);
 	}
 	return (NULL);
