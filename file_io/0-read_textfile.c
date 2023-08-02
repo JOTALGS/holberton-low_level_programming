@@ -14,7 +14,7 @@ read_textfile(const char *filename, size_t letters)
 
 	buf = malloc(sizeof(char) * letters);
 	if (!buf)
-		return(NULL);
+		return(-1);
 	ft = open(filename, O_RDONLY);
 	n = read(ft, buf, letters);
 	w = write(1, buf, n);
