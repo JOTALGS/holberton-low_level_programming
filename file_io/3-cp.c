@@ -4,7 +4,7 @@
 void
 copy_file(const char *from, const char *to)
 {
-	int fd, fd1, w;
+	int fd, fd1, w, c;
 	char *buf[1024];
 
 	fd = open(from, O_RDONLY);
@@ -14,14 +14,19 @@ copy_file(const char *from, const char *to)
 		exit(98);
 	}
 	read(fd, buf, 1024);
-	fd1 = open (to, O_WRONLY | O_CREAT | O_TRUNC, 0662);
+	fd1 = open(to, O_WRONLY | O_CREAT | O_TRUNC, 0662);
 	w = write(fd1, buf, 1024);
 	if (w == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", to);
-		exit (99);
+		exit(99);
 	}
-	close(fd1);
+	c = close(fd1);
+	if (c == -1)
+	{
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d", fd1);
+		exit(100);
+	}
 }
 int
 main(int ac, char **av)
