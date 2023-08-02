@@ -19,8 +19,8 @@ dlistint_t
 		{
 			if (idx == 0)
 			{
-				add_dnodeint(h, n);
-				return (head);
+				temp = add_dnodeint(h, n);
+				return (temp);
 			}
 			else if (idx == i)
 			{
@@ -31,7 +31,7 @@ dlistint_t
 				head->prev = temp;
 				head = temp;
 				prnode->next = head;
-				return (head);
+				return (temp);
 			}
 			head = head->next;
 			i++;
