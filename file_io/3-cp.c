@@ -14,17 +14,18 @@ copy_file(const char *from, const char *to)
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", from);
 		exit(98);
 	}
-	r = read(fd, buf, 1024);
 	fd1 = open(to, O_WRONLY | O_CREAT | O_TRUNC, 0662);
-	
-	if (r == -1)
+	while (r)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", from);
-		exit(98);
+		r = read(fd, buf, 1024);
+		if (r == -1)
+		{
+			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", from);
+			exit(98);
+		}
+		else if (r > 0)
+			w = write(fd1, buf, 1024);
 	}
-	else if (r > 0)
-		w = write(fd1, buf, 1024);
-	
 	if (w == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", to);
