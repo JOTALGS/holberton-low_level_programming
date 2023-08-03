@@ -9,13 +9,13 @@ copy_file(const char *from, const char *to)
 	char *buf[1024];
 
 	fd = open(from, O_RDONLY);
-	
+
 	if (fd == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", from);
 		exit(98);
 	}
-	fd1 = open(to, O_WRONLY | O_CREAT | O_TRUNC, 0662);
+	fd1 = open(to, O_WRONLY | O_CREAT | O_TRUNC, 0664);
 	while (r)
 	{
 		r = read(fd, buf, 1024);
@@ -32,7 +32,7 @@ copy_file(const char *from, const char *to)
 		exit(99);
 	}
 	c = close(fd1);
-	
+
 	if (c == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d", fd1);
