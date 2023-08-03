@@ -4,7 +4,8 @@
 void
 copy_file(const char *from, const char *to)
 {
-	int fd, fd1, w, c, r;
+	int fd, fd1, w, c;
+	int r = 1;
 	char *buf[1024];
 
 	fd = open(from, O_RDONLY);
@@ -23,8 +24,7 @@ copy_file(const char *from, const char *to)
 			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", from);
 			exit(98);
 		}
-		else if (r > 0)
-			w = write(fd1, buf, 1024);
+		w = write(fd1, buf, r);
 	}
 	if (w == -1)
 	{
