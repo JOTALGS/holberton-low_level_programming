@@ -11,7 +11,7 @@ hash_table_t
 	if (!nd)
 		return (NULL);
 	nd->size = size;
-	arr = malloc(sizeof(hash_node_t) * size);
+	arr = malloc(sizeof(hash_node_t *) * size);
 	if (!arr)
 		return (NULL);
 	nd->array = arr;
