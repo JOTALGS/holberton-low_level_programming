@@ -21,7 +21,7 @@ hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		((ht->array)[ind])->value = strdup(value);
 		return (1);
 	}
-	newnode->next = (ht->array)[ind + 1];
+	newnode->next = (ht->array)[ind];
 	(ht->array)[ind] = newnode;
 	return (1);
 }
