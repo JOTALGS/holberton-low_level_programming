@@ -8,11 +8,11 @@ hash_table_print(const hash_table_t *ht)
 	hash_node_t *p;
 	char n;
 
+	printf("{");
+	n = 0;
 	for (i = 0; ht && i < ht->size; i++)
 	{
 		p = ht->array[i];
-		n = 0;
-		printf("{");
 		while (p)
 		{
 			if (n)
@@ -21,7 +21,6 @@ hash_table_print(const hash_table_t *ht)
 			p = p->next;
 			n = 1;
 		}
-		printf("}");
-		printf("\n");
 	}
+	printf("}\n");
 }
