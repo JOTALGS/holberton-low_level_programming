@@ -1,18 +1,23 @@
 #include "search_algos.h"
 
 int binary_search(int *array, size_t size, int value) {
+
+size_t i;
+int left = 0;
+int right = size - 1;
+int mid;
+
 if (array == NULL || size == 0) {
 return -1;
 }
 
-int left = 0;
-int right = size - 1;
+
 
 while (left <= right) {
-int mid = left + (right - left) / 2;
+mid = left + (right - left) / 2;
 
 printf("Searching: ");
-for (size_t i = 0; i < size; i++) {
+for (i = 0; i < size; i++) {
 if (i == mid) {
 printf("| ");
 }
